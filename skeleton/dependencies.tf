@@ -8,6 +8,8 @@ terraform {
 }
 
 provider "aws" {
-  profile = var.profile
-  region  = var.region
+  assume_role {
+    role_arn = "arn:aws:iam::558260051993:role/adfs-ftengdev-dev-softeng-app-dev"
+    session_name = "EC2 Terraform session"
+  }
 }
