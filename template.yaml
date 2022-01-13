@@ -9,7 +9,7 @@ spec:
   type: website
 
   parameters:
-    - title: Fill in these steps
+    - title: Fill details for your backstage component
       required:
         - component_id
         - owner
@@ -27,6 +27,57 @@ spec:
           ui:options:
             allowedKinds:
               - Group
+    - title: Fill in details for your AWS resource tags
+      required:
+        - team_code
+        - app_id
+        - cost_centre
+        - team_email_address
+        - map_migrated
+        - application_name
+        - environment
+        - data_confidentiality
+      properties:
+        team_code:
+          title: Team code
+          type: string
+          description: Team code allocated upon creation of your AWS account
+          ui:autofocus: true
+        app_id:
+          title: Application ID
+          type: string
+          description: Application ID assigned on service now.
+        cost_centre:
+          title: Cost centre
+          type: string
+          description: Cost centre of your team/department.
+        team_email_address:
+          title: Team email address
+          type: string
+          description: Email address where alerts and notifications regarding your AWS infrastructure could be sent.
+        map_migrated:
+          title: Map migrated
+          type: string
+          description: Tag for migrated services, used to earn service creadits
+        application_name:
+          title: Application name
+          type: string
+          description: Name of the application
+        environment:
+          title: Environment
+          type: string
+          enum:
+            - Dev
+            - UAT
+            - Prod
+        data_confidentiality:
+          title: Data confidentiality
+          type: string
+          enum:
+            - Unrestricted
+            - Internal Only
+            - Confidential
+            - Secret
     - title: Choose a location
       properties:
         repoUrl:
