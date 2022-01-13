@@ -53,7 +53,7 @@ variable "DataConfidentiality" {
 }
 
 variable "map-migrated" {
-  default = "${{parameters.map_migrated}}"
+  default = "${{values.map_migrated}}"
 }
 
 variable "PersonalData" {
