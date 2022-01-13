@@ -14,17 +14,17 @@ variable "region_shorthand" {
 
 # ########## General Variables ##########
 variable "environment" {
-  default = "dev"
+  default = "${{values.environment}}"
 }
 
 variable "Application" {
-  default = "kudos"
+  default = "${{values.application_name}}"
 }
 
 
 # ########## Tags ##########
 variable "AppId" {
-  default     = ""
+  default     = "${{values.app_id}}"
   description = "ServiceNow application ID"
 }
 
@@ -37,27 +37,27 @@ variable "TeamName" {
 }
 
 variable "TeamCode" {
-  default = "softeng"
+  default = "${{values.team_code}}"
 }
 
 variable "CostCentre" {
-  default = "228900"
+  default = "${{values.cost_centre}}"
 }
 
 variable "TeamEmailAddress" {
-  default = "FTEngineeringDevelopers@absa.africa"
+  default = "${{values.team_email_address}}"
 }
 
 variable "DataConfidentiality" {
-  default = "Internal Only"
+  default = "${{values.data_confidentiality}}"
 }
 
 variable "map-migrated" {
-  default = " d-server-00hct5irruz746"
+  default = "${{values.map_migrated}}"
 }
 
 variable "PersonalData" {
-  default = "false"
+  default = "${{values.personal_data}}"
 }
 
 variable "BuiltBy" {

@@ -37,6 +37,7 @@ spec:
         - application_name
         - environment
         - data_confidentiality
+        - personal_data
       properties:
         team_code:
           title: Team code
@@ -78,6 +79,13 @@ spec:
             - Internal Only
             - Confidential
             - Secret
+        personal_data:
+          title: Personal data
+          type: string
+          description: Will personally idenfying data be stored or processed?
+          enum:
+            - True
+            - False
     - title: Choose a location
       properties:
         repoUrl:
