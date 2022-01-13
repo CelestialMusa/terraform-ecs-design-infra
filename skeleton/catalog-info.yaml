@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: terraform-ecs-design-infra
-  description: ${{values.description | dump}}
+  description: Scaffolder template for ECS infrastructure
   annotations:
     github.com/project-slug: absa-group/terraform-ecs-design-infra
     sentry.io/project-slug: dir:.
