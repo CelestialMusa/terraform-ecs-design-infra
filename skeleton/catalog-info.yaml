@@ -4,7 +4,7 @@ metadata:
   name: terraform-ecs-design-infra
   description: Scaffolder template for ECS infrastructure
   annotations:
-    github.com/project-slug: absa-group/terraform-ecs-design-infra
+    github.com/project-slug: CelestialMusa/terraform-ecs-design-infra
     sentry.io/project-slug: dir:.
     backstage.io/techdocs-ref: dir:.
 spec:
