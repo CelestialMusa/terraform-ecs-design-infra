@@ -97,6 +97,14 @@ spec:
         values:
           component_id: ${{parameters.component_id}}
           owner: ${{parameters.owner}}
+          environment: ${{parameters.environment}}
+          application_name: ${{parameters.application_name}}
+          app_id: ${{parameters.app_id}}
+          team_code: ${{parameters.team_code}}
+          cost_centre: ${{parameters.cost_centre}}
+          team_email_address: ${{parameters.team_email_address}}
+          data_confidentiality: ${{parameters.data_confidentiality}}
+          map_migrated: ${{parameters.map_migrated}}
 
     - id: fetch-docs
       name: Fetch Docs
