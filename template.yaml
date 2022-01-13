@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: AWS ECS Template
+  name: AWS-ECS-Template
   title: Terraform ECS template 
   description: Scaffolder template for ECS infrastructure
 spec:
