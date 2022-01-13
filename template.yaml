@@ -81,11 +81,11 @@ spec:
             - Secret
         personal_data:
           title: Personal data
-          type: string
+          type: boolean
           description: Will personally idenfying data be stored or processed?
           enum:
-            - True
-            - False
+            - "True"
+            - "False"
     - title: Choose a location
       properties:
         repoUrl:
