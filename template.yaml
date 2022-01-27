@@ -58,7 +58,7 @@ spec:
         map_migrated:
           title: Map migrated
           type: string
-          description: Tag for migrated services, used to earn service creadits
+          description: Tag for migrated services, used to earn service credits
         application_name:
           title: Application name
           type: string
@@ -120,6 +120,13 @@ spec:
         allowedHosts: ['github.com']
         description: This is ${{parameters.component_id}}
         repoUrl: ${{parameters.repoUrl}}
+        repoVisibility: Internal
+
+    - id: register-github-runner
+      name: Register runner
+      action: http-request
+      input:
+        repoUrl: ${{steps.publish.output.remoteUrl}}
 
     - id: register
       name: Register
