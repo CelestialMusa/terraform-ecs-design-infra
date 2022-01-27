@@ -120,7 +120,7 @@ spec:
         allowedHosts: ['github.com']
         description: This is ${{parameters.component_id}}
         repoUrl: ${{parameters.repoUrl}}
-        repoVisibility: Internal
+        repoVisibility: internal
 
     - id: register-github-runner
       name: Register runner
