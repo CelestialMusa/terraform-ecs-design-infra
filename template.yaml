@@ -124,7 +124,7 @@ spec:
 
     - id: register-github-runner
       name: Register runner
-      action: http-request
+      action: custom:http-request
       input:
         repoUrl: ${{steps.publish.output.remoteUrl}}
 
